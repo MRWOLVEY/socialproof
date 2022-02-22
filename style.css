@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+.brdr{
+    border: 1px solid black;
+}
+
+body{
+    background-color: #fffeff;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns:repeat(auto-fill,1fr);
+    grid-template-rows:repeat(auto-fill,1fr);
+    /* grid-template:1fr 1fr/1fr 1fr; */
+    position: relative;
+}
+/* @media only screen and (max-width: 300px) {
+    body{
+        display: grid;
+        grid-template-columns:repeat(auto-fill,1fr);
+        grid-template-rows:repeat(auto-fill,1fr);
+    }
+  } */
+.pattern{
+    position: absolute;
+}
+.patternb{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    
+}
+
+.para h1{
+    display: flex;
+    align-items:center;
+    color: #4a1f4b;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 1;
+    font-size:333%;
+    height: 18rem;
+    padding: 1rem 0 0 2rem;
+    letter-spacing: -0.35rem;
+    word-spacing: 0.15rem;
+}
+
+.para p{
+    color:#868285;
+    padding: 0 0 2rem 2rem;
+}
+
+.ratings{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4rem 0;
+    align-items: center;
+}
+.rating{
+    background-color: #e5d8e7f8;
+    display: flex;  
+    width: 25.5rem;
+    border-radius: 10px;
+    height: 3.3rem;
+    margin-right: 6rem;
+    transition: 200ms;
+}
+.rating:hover{
+    width: 80%;
+}
+
+.stars,.quote{
+    margin: 0.5rem;
+    align-self: center;
+}
+.quote{
+    font-size:small;
+    color: #7e527c;
+    font-weight: bold;
+}
+svg{
+    margin: 1px;
+    z-index: -1;
+}
+#guru{
+    margin-right: 3rem;
+}
+#best{
+    margin-right: 0;
+}
+
+.cards{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    background-color: #511f50ee;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 20px;
+    font-size:x-small;
+    height: fit-content;
+    transition: 300ms;
+}
+.card:hover{
+    filter:grayscale(0.2);
+    transform: translate(0,-0.5rem);
+}
+
+.tag{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-size: small;
+    margin-bottom: 2rem;
+}
+.tag img{
+    width: 3rem;
+    border-radius: 100%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+#irene{
+    margin-top: 2rem;
+}
+#anne{
+    margin-top: 3rem;
+}
